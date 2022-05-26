@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/* Шапка */
+
+body{
+    padding: 0; margin: 0;
+    font-family: Rubik;
+}
+header{
+    height: 180px; width: 100%;
+    background-color: #1C1C1C;
+}
+header .show-menu{
+  position: absolute;
+  z-index: 10000;
+  display: block;
+  margin: 35px 0px 0px 0px;
+  padding: 20px;
+  width: 150px;
+  background-color: rgb(0, 0, 0);
+  color: black;
+  text-decoration: none;
+}
+.logo img{
+  z-index: 10000;
+    position: absolute;
+    width: 8%;
+    margin-left: 15%;
+    top: 1%;
+}
+* {box-sizing: border-box;}
+form {
+  position: absolute;
+  z-index: 1;
+  width: 30%;
+  margin: 2% 55%;
+  border: none;
+  background-color: #828282;
+  color: white;
+}
+input, .button {
+  outline: none;
+  background: transparent;
+}
+input {
+  width: 100%;
+  height: 42px;
+  padding-left: 15px;
+  border: none;
+}
+.button {
+  border: none;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  cursor: pointer;
+}
+.button:before {
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
+}
+input:focus {
+  border-color: #311c24;
+}
+input::placeholder{
+  color: rgb(196, 196, 196);
+}
+.e{
+  width: 90%;
+}
+.main{
+  position: relative;
+  color: white;
+  font-family: rubik;
+  padding-top: 130px;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin-left: 12%;
+}
+.li{
+  font-size: 20px;
+  list-style-type: none;
+}
+.menu__link{
+  text-decoration:none;
+  position: relative;
+  display: inline-block; 
+  color:#ffffff;
+}
+.li a:after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 0%; 
+  background-color: #ff0000; 
+  transition: width 0.4s ease-in-out; 
+}
+.li a:hover:after,.li a:focus:after {
+  width: 100%;
+}
+.sub-menu__link{
+  color: #000000;
+  font-size: 16px;
+  text-decoration: none;
+}
+.moto__list{
+  display: none;
+  position: absolute;
+  z-index: 100;
+  background-color: white;
+  padding: 20px;
+  list-style: none;
+}
+.menu li:hover .moto__list{
+  display: block;
+}
+.menu-open{
+  top: 10px;
+  position: absolute;
+  border-style: none;
+  background: transparent;
+}
+.menu-open img{
+  width: 150%;
+  margin-top: 50%;
+  margin-left: 50%;
+  display: none;
+}
+
+/* КОНТЕНТ */
+
+
+
+
+
+/* ПОДВАЛ */
+footer{
+    width: 100%;
+    height: 140px;
+    background: #1c1c1c;
+    margin-top: 50px;
+    display: flex;
+  }
+  .store{
+    color: white;
+    margin-left: 15%;
+    padding-top: 2%;
+  }
+  .p1, .t, .seti{
+    font-size: 30px;
+  }
+  .p2, .t2{
+    font-size: 30px;
+  }
+  .adres, .social{
+    color: white;
+    margin-left: 5%;
+    padding-top: 2%;
+  }
+  .seti2 img{
+    width: 10%;
+  }
+  
+  /* АДАПТИВНОСТЬ */
+  
+  @media screen and (max-width: 1440px) {
+    .p1, .p2 , .t, .t2, .seti{
+      font-size: 24px;
+    }
+    .seti2 img{
+      width: 7%;
+    }
+    header{
+      height: 140px;
+    }
+    .main{
+      padding-top: 90px;
+    }
+    .flex-wrapper{
+      height: 380px;
+    }
+    #prev img, #next img{
+      top: 41%;
+    }
+    footer{
+      height: 120px;
+    }
+  }
+  @media screen and (max-width: 1199px) {
+    .li{
+      font-size: 15px;
+    }
+    .p1, .p2 , .t, .t2, .seti{
+      font-size: 20px;
+    }
+    header{
+      height: 120px;
+    }
+    .main{
+      padding-top: 75px;
+    }
+    .flex-wrapper{
+      height: 310px;
+    }
+    footer{
+      height: 100px;
+    }
+    #prev img, #next img{
+      top: 30%;
+    }
+  }
+  
+  @media screen and (max-width: 991px) {
+    .li{
+      font-size: 14px;
+    }
+    .p1, .p2 , .t, .t2, .seti{
+      font-size: 15px;
+    }
+    header{
+      height: 110px;
+    }
+    .main{
+      padding-top: 65px;
+      margin-right: 20px;
+    }
+    .flex-wrapper{
+      height: 310px;
+    }
+    footer{
+      height: 80px;
+    }
+    .seti2 img{
+      width: 5%;
+    }
+    #prev img, #next img{
+      top: 25%;
+    }
+    .akcii{
+      font-size: 22px;
+    }
+    .m{
+      width: 450px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .li{
+      font-size: 10px;
+    }
+    .p1, .p2 , .t, .t2, .seti{
+      font-size: 8px;
+    }
+    header{
+      height: 80px;
+    }
+    .poisk img{
+      width: 60%;
+    }
+    input {
+      width: 80%;
+      height: 30px;
+    }
+    .main{
+      padding-top: 45px;
+      margin-right: 20px;
+    }
+    .flex-wrapper{
+      height: 180px;
+    }
+    footer{
+      height: 70px;
+    }
+    .seti2 img{
+      width: 4%;
+    }
+    #prev img, #next img{
+      top: 21%;
+      width: 2%;
+    }
+    .akcii .dot1{
+      font-size: 16px;
+    }
+    .dots-wrapper{
+      margin-left: 150px;
+      margin-top: 16px;
+    }
+    .h3{
+      font-size: 16px;
+    }
+    .m{
+      display: none;
+    }
+    .img2{
+      margin: 9px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 575px) {
+    #prev img, #next img{
+      top: 19%;
+      width: 2%;
+    }
+    footer{
+      width: 100%;
+      height: 140px;
+      background: #1c1c1c;
+      margin-top: 50px;
+      font-size: 10px;
+      display: block;
+    }
+    .adres{
+      margin-left: 15%;
+    }
+    .seti, .seti2{
+      margin-left: 10%;
+    }
+    .akcii .dot1{
+      font-size: 16px;
+    }
+    .dots-wrapper{
+      margin-left: 150px;
+      margin-top: 16px;
+    }
+    .h3{
+      font-size: 16px;
+      margin-left: 15%;    
+    }
+    .dots-wrapper{
+      top: 20px;
+      right: 150px;
+    }
+    .m{
+      display: none;
+    }
+    .img2{
+      margin: 9px;
+    }
+    .poisk img {
+      display: block;
+    }
+    input{
+      display: none;
+    }
+    .logo {
+      margin-left: 30%;
+    }
+    .menu{
+      display: none;
+    }
+    .menu-open img{
+      display: block;
+    }
+    .sub-menu__link, .moto__list{
+      display: none;
+      background-color: transparent;
+    }
+    .button img{
+      position: absolute;
+      width: 260%;
+      left: 35px;
+      top: 10px;
+    }
+     .logo img{
+      width: 14%;
+      left: 29%;
+    }
+    .img2{
+      width: 45%;
+    }
+    .akcii{
+      display: block;
+      margin: 0%;
+    }
+    .image{
+      margin-top: 10%;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .flex-wrapper{
+      display: none;
+    }
+    .img2{
+      width: 90%;
+    }
+    .h3{
+      font-size: 16px;
+      margin-left: 35%;
+    }
+    .dots-wrapper{
+      position: absolute;
+      top: 20px;
+      left: -75px;
+    }
+    .menu li{
+      font-size: 15px;
+    }
+    header .show-menu{
+      width: 200px;
+    }
+  }

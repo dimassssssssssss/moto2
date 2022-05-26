@@ -1,0 +1,57 @@
+.content{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.enduro{
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    padding-top: 50px;
+    font-size: 20px;
+}
+.enduro img{
+    padding-right: 20px;  
+    width: 30%;
+}
+.knop a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    left: 76%;
+    padding: 15px;
+    top: 57px;
+    background: red;
+    transition: 1s;
+}
+.knop a:hover{
+    background: black;
+    color: red;
+}
+.knop1 a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    left: 76%;
+    padding: 15px;
+    top: 150px;
+    background: red;
+    transition: 1s;
+}
+.knop1 a:hover{
+    background: black;
+    color: red;
+}
+.knop2 a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    left: 76%;
+    padding: 15px;
+    top: 140px;
+    background: red;
+    transition: 1s;
+}
+.knop2 a:hover{
+    background: black;
+    color: red;
+}
